@@ -7,7 +7,7 @@ class TestIngresoEnCuenta(unittest.TestCase):
         with self.assertRaises(ValueError):
             cuenta.retirar(500)
 
-        self.assertEqual(cuenta.saldo,0)#Ahora vemos que tenemos que definir la variable saldo en Cuenta
+        self.assertEqual(cuenta.saldo,0)
 
     def test_cuando_retiras_cuenta_existente_menor_saldo(self) -> None:
         cuenta = Cuenta()
